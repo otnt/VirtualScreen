@@ -30,6 +30,7 @@ class VideoSource: NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
         let captureSession = AVCaptureSession()
         captureSession.sessionPreset = AVCaptureSessionPreset640x480
         // captureSession.sessionPreset = AVCaptureSessionPreset1280x720
+        
         _captureSession = captureSession
     }
     

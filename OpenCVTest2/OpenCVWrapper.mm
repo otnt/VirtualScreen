@@ -18,7 +18,7 @@ cv::Mat overlapStillImage = [overlapStillUIImage CVMat];
 NSString* videoPath=[[NSBundle mainBundle] pathForResource:@"TestVideo" ofType:@"mov"];
 VideoCapture capture(videoPath.UTF8String);
 
-cv::Mat lastImage;
+cv::Mat* lastImage;
 int disappearCount;
 
 + (UIImage *)processImageWithOpenCV:(UIImage*)inputImage {
@@ -38,14 +38,16 @@ int disappearCount;
         cv::Mat perspectiveTransformMatrix = getPerspectiveTransformMatrix(qrQuadPairs);
         
         cameraImage = overlayImageOnCamera(overlayImage, cameraImage, perspectiveTransformMatrix);
-        
+                
         disappearCount = 0;
-        lastImage = cameraImage;
+        lastImage = &cameraImage;
     } else {
-        if (disappearCount++ < 5) {
-            cameraImage = lastImage;
+        if ((disappearCount++ < 5) && (lastImage != NULL)) {
+            cameraImage = *lastImage;
         }
     }
+    
+    cameraImage = splitScreen(cameraImage);
     
     return [UIImage imageWithCVMat:cameraImage];
 }

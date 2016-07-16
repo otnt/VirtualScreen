@@ -29,4 +29,10 @@ cv::Mat getPerspectiveTransformMatrix(vector<qrComb> outputQuad);
 
 cv::Mat overlayImageOnCamera(cv::Mat overlayImage, cv::Mat cameraImage, cv::Mat perspectiveTransformMatrix);
 
+cv::Mat testProjection(cv::Mat);
+
+cv::Mat resizeTo640x360(cv::Mat);
+
+cv::Mat splitScreen(cv::Mat);
+
 #endif /* VirtualScreen_hpp */
