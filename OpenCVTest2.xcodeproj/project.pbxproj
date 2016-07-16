@@ -17,7 +17,6 @@
 		946DFC0A1D38A39E004906D3 /* libjpeg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 946DFC091D38A39E004906D3 /* libjpeg.a */; };
 		946DFC0E1D38B075004906D3 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 946DFC0D1D38B075004906D3 /* libzbar.a */; };
 		946DFC291D38CFB4004906D3 /* textbook.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 946DFC281D38CFB4004906D3 /* textbook.jpg */; };
-		946DFC2B1D38E9AE004906D3 /* fan_even.mpg in Resources */ = {isa = PBXBuildFile; fileRef = 946DFC2A1D38E9AE004906D3 /* fan_even.mpg */; };
 		946DFC2D1D38EEF2004906D3 /* TestVideo.mov in Resources */ = {isa = PBXBuildFile; fileRef = 946DFC2C1D38EEF2004906D3 /* TestVideo.mov */; };
 		949111BC1D360F4400A73E40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949111BB1D360F4400A73E40 /* AppDelegate.swift */; };
 		949111BE1D360F4400A73E40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949111BD1D360F4400A73E40 /* ViewController.swift */; };
@@ -63,7 +62,6 @@
 		946DFC231D38B0D8004906D3 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
 		946DFC241D38B0D8004906D3 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
 		946DFC281D38CFB4004906D3 /* textbook.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = textbook.jpg; sourceTree = "<group>"; };
-		946DFC2A1D38E9AE004906D3 /* fan_even.mpg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; path = fan_even.mpg; sourceTree = "<group>"; };
 		946DFC2C1D38EEF2004906D3 /* TestVideo.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = TestVideo.mov; sourceTree = "<group>"; };
 		949111B81D360F4400A73E40 /* OpenCVTest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenCVTest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		949111BB1D360F4400A73E40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -141,7 +139,6 @@
 			isa = PBXGroup;
 			children = (
 				946DFC281D38CFB4004906D3 /* textbook.jpg */,
-				946DFC2A1D38E9AE004906D3 /* fan_even.mpg */,
 				946DFC2C1D38EEF2004906D3 /* TestVideo.mov */,
 			);
 			name = Resources;
@@ -270,7 +267,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				946DFC2B1D38E9AE004906D3 /* fan_even.mpg in Resources */,
 				949111C61D360F4400A73E40 /* LaunchScreen.storyboard in Resources */,
 				949111C31D360F4400A73E40 /* Assets.xcassets in Resources */,
 				949111C11D360F4400A73E40 /* Main.storyboard in Resources */,
