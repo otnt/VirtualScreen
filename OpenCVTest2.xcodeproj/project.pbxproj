@@ -27,6 +27,7 @@
 		949111D11D360F9600A73E40 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949111D01D360F9600A73E40 /* UIKit.framework */; };
 		949111D31D360F9E00A73E40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949111D21D360F9D00A73E40 /* Foundation.framework */; };
 		949111D51D360FA400A73E40 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 949111D41D360FA400A73E40 /* CoreGraphics.framework */; };
+		949365E11D3A000100D48DB1 /* VirtualScreen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 949365DF1D3A000100D48DB1 /* VirtualScreen.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,8 @@
 		949111D41D360FA400A73E40 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		949111D71D36100500A73E40 /* OpenCVTest2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVTest2-Prefix.pch"; sourceTree = "<group>"; };
 		949111D81D3610C800A73E40 /* OpenCVTest2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OpenCVTest2-Bridging-Header.h"; sourceTree = "<group>"; };
+		949365DF1D3A000100D48DB1 /* VirtualScreen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VirtualScreen.cpp; sourceTree = "<group>"; };
+		949365E01D3A000100D48DB1 /* VirtualScreen.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VirtualScreen.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,9 +166,11 @@
 		949111BA1D360F4400A73E40 /* OpenCVTest2 */ = {
 			isa = PBXGroup;
 			children = (
+				949365E21D3A004A00D48DB1 /* OpenCVHelper */,
 				946DFC271D38C812004906D3 /* Resources */,
 				949111CD1D360F5D00A73E40 /* Frameworks */,
 				949111D61D360FDB00A73E40 /* Supporting Files */,
+				949365DD1D39FF6800D48DB1 /* VirtualScreenImplementation */,
 				949111BD1D360F4400A73E40 /* ViewController.swift */,
 				949111BF1D360F4400A73E40 /* Main.storyboard */,
 				949111D81D3610C800A73E40 /* OpenCVTest2-Bridging-Header.h */,
@@ -206,6 +211,22 @@
 				949111D71D36100500A73E40 /* OpenCVTest2-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		949365DD1D39FF6800D48DB1 /* VirtualScreenImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				949365DF1D3A000100D48DB1 /* VirtualScreen.cpp */,
+				949365E01D3A000100D48DB1 /* VirtualScreen.hpp */,
+			);
+			name = VirtualScreenImplementation;
+			sourceTree = "<group>";
+		};
+		949365E21D3A004A00D48DB1 /* OpenCVHelper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = OpenCVHelper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,6 +306,7 @@
 				941E301E1D375D9300E9ED14 /* UIImage+OpenCV.mm in Sources */,
 				941E301B1D375B4000E9ED14 /* OpenCVWrapper.mm in Sources */,
 				949111BE1D360F4400A73E40 /* ViewController.swift in Sources */,
+				949365E11D3A000100D48DB1 /* VirtualScreen.cpp in Sources */,
 				941E30201D3768B900E9ED14 /* VideoSource.swift in Sources */,
 				949111BC1D360F4400A73E40 /* AppDelegate.swift in Sources */,
 			);
